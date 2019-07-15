@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5Fund", "MVC5Fund\MVC5Fund.csproj", "{D36C204C-EB68-418C-89CB-DCF0C6A42768}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KatanaIntro", "KatanaIntro\KatanaIntro.csproj", "{BB130FAA-AD7B-4AEA-9630-96004F1E4185}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D36C204C-EB68-418C-89CB-DCF0C6A42768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36C204C-EB68-418C-89CB-DCF0C6A42768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D36C204C-EB68-418C-89CB-DCF0C6A42768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D36C204C-EB68-418C-89CB-DCF0C6A42768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB130FAA-AD7B-4AEA-9630-96004F1E4185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB130FAA-AD7B-4AEA-9630-96004F1E4185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB130FAA-AD7B-4AEA-9630-96004F1E4185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB130FAA-AD7B-4AEA-9630-96004F1E4185}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7ED601D1-2912-4746-8BBC-42268A9F1409}
+	EndGlobalSection
+EndGlobal
