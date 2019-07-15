@@ -26,16 +26,41 @@ namespace KatanaIntro
     }
     public class Startup
     {
-        public void Configuration(IAppBuilder app)
+        public async Task Configuration(IAppBuilder app)
         {
-            app.Use<HelloWorld>();
+            app.Use(async (env, next) =>
+            {
+                foreach(var pair in env.Environment)
+                {
+                    Console.WriteLine($"{pair.Key} : {pair.Value}");
+                }
+
+                await next();
+            });
+
+            app.Use(async (env, next) =>
+            {
+                Console.WriteLine($"Requesting: {env.Request.Path}");
+                await next();
+            });
+                
+
         }
     }
 
-    public class HelloWorld
+    public static class AppBuilderExtensions
+    {
+        public static void UseHelloWorld(this IAppBuilder app)
+        {
+            app.Use<HelloWorldComponent>();
+        }
+    }
+    
+
+    public class HelloWorldComponent
     {
         AppFunc _next;
-        public HelloWorld(AppFunc next)
+        public HelloWorldComponent(AppFunc next)
         {
             _next = next;
         }
