@@ -3,7 +3,7 @@ using System.Web.Mvc;
 
 namespace MVC5Fund
 {
-    public class FilterConfig
+    public partial class FilterConfig
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
